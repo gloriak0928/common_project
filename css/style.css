@@ -1,0 +1,30 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font: bold;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font: bold;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font: bold;
+}
+p{
+    line-height:normal;
+}
+img {
+    border: 5px solid #FF5733;  
+    padding: 10px;  
+    margin: 20px;  
+    border-top-right-radius: 30px; 
+}
+li {
+    display: inline-block;
+    margin-left: 50px;
+}
