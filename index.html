@@ -3,66 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pets</title>
 </head>
 
 
 <body>
-    <a href = "">Skip to Main Content</a>
+    <div class="skip"><a href="">Skip to Main Content</a></div>
+
     <main>
-    <nav>
-        <ul>
-            <li><a href="index.html">Pets</a></li>
-            <li><a href="travel.html">Travel</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1>Pets</h1>
-    </header>
-        <div>
-            <h2>Ador</h2>
-            <img src="images/Pets/images/ador_headrub.jpeg" alt="ador_headrub" height="400">
-            <p>Ador is a charming feline with luxurious tabby fur, captivating green eyes, and a playful spirit that melts hearts instantly.</p>
-        </div>
-        <div>
-            <h2>York</h2>
-            <img src="images/Pets/images/york.jpg" alt="york_holding_a_tennisball" height="400">
-            <p>York, a black-furred 5-years-old boy, watches curiously as the cat gracefully prances around, its silky fur shimmering in the sunlight.</p>
-        </div>
-        <div>
-            <h2>Bear</h2>
-            <img src="images/Pets/images/bear_squish.JPG" alt="bear_squish" height="400">
-            <p>Bear is a spirited Shiba Inu with a fox-like appearance, exuding charm and mischief while radiating warmth to everyone around him.</p>
-        </div>
-        <div>
-            <h2>Carter</h2>
-            <img src="images/Pets/images/carter.jpeg" alt="carter_smilling" height="400">
-            <p>Carter is a striking Husky with piercing blue eyes, exuding playful energy and unparalleled loyalty, a true heart-stealer in fur.</p>
-        </div>
-        <div>
-            <h2>Chonk</h2>
-            <img src="images/Pets/images/chonks_happy.JPG" alt="chonks_happy" height="400">
-            <p>Chonk is a lovable Ragdoll cat with mesmerizing blue eyes, a silky coat, and a penchant for cuddles and playtime.</p>
-        </div>
-
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Pets</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
         
-        <h3>Photo Gallery</h3>
-        <img src="images/Pets/images/ador_headrub.jpeg" alt="ador_headrub" height="200">
-        <img src="images/Pets/images/york.jpg" alt="york" height="200">
-        <img src="images/Pets/images/bear_squish.JPG" alt="bear_squish" height="200">
-        <img src="images/Pets/images/carter.jpeg" alt="carter" height="200">
 
-        <h3>Likes</h3>
-        <ul>
-            <li>Playing</li>
-            <li>Eating</li>
-            <li>Sleeping</li>
-        </ul>
+        <div class="item-profile">
+            <img src="images/Pets/images/ador_headrub.jpeg" alt="ador_headrub">
+            <div class="content">
+                <h2>Ador</h2>
+                <p>Ador is a charming feline with luxurious tabby fur, captivating green eyes, and a playful spirit that melts hearts instantly.</p>
+                <h3>Likes: </h3>
+                <ul class="item-info">
+                    <li>Instinct's chicken can</li>
+                    <li>Treats</li>
+                    <li>Knocking down cups</li>
+                </ul>
+            </div>
+            <!-- <h3>Photo Gallery</h3> -->
+            <div class="photo-gallery">
+                <img src="images/Pets/images/ador1.jpeg" alt="ador1">
+                <img src="images/Pets/images/ador2.jpeg" alt="ador2">
+                <img src="images/Pets/images/ador3.jpeg" alt="ador3">
+                <img src="images/Pets/images/ador4.jpeg" alt="ador4">
+            </div> 
+        </div>
 
+
+        <div class="item-profile">
+            <img src="images/Pets/images/york.jpg" alt="york_holding_a_tennisball">
+            <div class="content">
+                <h2>York</h2>
+                <p>York, a black-furred 5-years-old boy, watches curiously as the cat gracefully prances around, its silky fur shimmering in the sunlight.</p>
+                <ul class="item-info">
+                    <li>Playing</li>
+                    <li>Eating</li>
+                    <li>Sleeping</li>
+                </ul>
+            </div>
+            <!-- <h3>Photo Gallery</h3> -->
+            <div class="photo-gallery">
+                <img src="images/Pets/images/york1.jpeg" alt="york1">
+                <img src="images/Pets/images/york2.jpeg" alt="york2">
+                <img src="images/Pets/images/york3.jpeg" alt="york3">
+                <img src="images/Pets/images/york4.jpeg" alt="york4">
+            </div>
+        </div>
+
+        <div class="item-profile">
+            <img src="images/Pets/images/bear_squish.JPG" alt="bear_squish">
+            <div class="content">
+                <h2>Bear</h2>
+                <p>Bear is a spirited Shiba Inu with a fox-like appearance, exuding charm and mischief while radiating warmth to everyone around him.</p>
+                <ul class="item-info">
+                    <li>Playing</li>
+                    <li>Eating</li>
+                    <li>Sleeping</li>
+                </ul>
+            </div>
+            <!-- <h3>Photo Gallery</h3> -->
+            <div class="photo-gallery">
+                <img src="images/Pets/images/bear1.jpeg" alt="bear1">
+                <img src="images/Pets/images/bear2.jpeg" alt="bear2">
+                <img src="images/Pets/images/bear3.jpeg" alt="bear3">
+                <img src="images/Pets/images/bear4.jpeg" alt="bear4">
+            </div>
+        </div>
+
+        <div class="item-profile">
+            <img src="images/Pets/images/carter.jpeg" alt="carter_smilling">
+            <div class="content">
+                <h2>Carter</h2>
+                <p>Carter is a striking Husky with piercing blue eyes, exuding playful energy and unparalleled loyalty, a true heart-stealer in fur.</p>
+                <ul class="item-info">
+                    <li>Playing</li>
+                    <li>Eating</li>
+                    <li>Sleeping</li>
+                </ul>
+            </div>
+            <!-- <h3>Photo Gallery</h3> -->
+            <div class="photo-gallery">
+                <img src="images/Pets/images/carter1.jpeg" alt="carter1">
+                <img src="images/Pets/images/carter2.jpeg" alt="carter3">
+                <img src="images/Pets/images/carter3.jpeg" alt="carter3">
+                <img src="images/Pets/images/carter4.jpeg" alt="carter4">
+            </div>
+        </div>
+
+        <div class="item-profile">
+            <img src="images/Pets/images/chonks_happy.JPG" alt="chonks_happy">
+            <div class="content">
+                <h2>Chonk</h2>
+                <p>Chonk is a lovable Ragdoll cat with mesmerizing blue eyes, a silky coat, and a penchant for cuddles and playtime.</p>
+                <ul class="item-info">
+                    <li>Playing</li>
+                    <li>Eating</li>
+                    <li>Sleeping</li>
+                </ul>
+            </div>
+            <!-- <h3>Photo Gallery</h3> -->
+            <div class="photo-gallery">
+                <img src="images/Pets/images/chonk1.jpeg" alt="chonk1">
+                <img src="images/Pets/images/chonk2.jpeg" alt="chonk2">
+                <img src="images/Pets/images/chonk3.jpeg" alt="chonk3">
+                <img src="images/Pets/images/chonk4.jpeg" alt="chonk4">
+            </div>
+        </div>
     </main>
 </body>
 </html>
