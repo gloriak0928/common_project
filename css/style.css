@@ -20,7 +20,7 @@
 
 
 body, h1, h2, h3, p, ul, li, a {
-    font-family: Arial, sans-serif; /* 设置 Arial 字体 */
+    font-family: "Trirong", serif; /* 设置 Arial 字体 */
 }
 
 a {
@@ -44,11 +44,11 @@ a:hover {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
     nav {
         text-align: left;
         padding: 30px 0;
-    }
+    } */
     /* .container {
         display: grid;
         grid-template-columns: 50px auto 500px auto 50px;
@@ -59,7 +59,7 @@ a:hover {
     .method, .contact, .about-image, .clients-image {
         grid-column: 2 / span 2;
     } */
-  }
+  /* } */
 
   @media screen and (prefers-reduced-motion: reduce){
     html{
@@ -77,6 +77,14 @@ a:hover {
 
     .photo-gallery img {
         animation: none;
+    
+    .chonk_animated {
+        display: none;
+    }
+
+    .chonk_static {
+        display: block;
+    }
     }
 
   }
@@ -91,6 +99,8 @@ a:hover {
   }
 
 /* 导航菜单样式 */
+
+
 nav ul {
     display: grid;
     font-size: x-large;
@@ -110,10 +120,18 @@ nav ul li.current {
     font-size:xx-large;
 }
 
+/* nav{
+    
+} */
+
 /* 宠物配置文件样式 */
 .item-profile {
     animation: fadeIn 1s ease-in-out;
-    background-color: bisque;
+    background-image: url('../images/background.jpg');
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center; /* Center the image */
+    
     display: grid;
     grid-template-columns: 1fr 2fr; /* 图片占1份，文本和列表占2份 */
     grid-template-rows: auto auto;
@@ -129,7 +147,7 @@ nav ul li.current {
 .item-profile img {
     grid-area: image; /* 指定网格区域 */
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     height: auto;
 }
 
@@ -158,4 +176,12 @@ nav ul li.current {
     width: auto; /* 宽度自动调整以保持宽高比 */
     height: 30vh;
     flex-shrink: 0; /* 防止 flexbox 缩小图片 */
+}
+
+/* .chonk_animated {
+    display: block;
+} */
+
+.chonk_static {
+    display: none;
 }
