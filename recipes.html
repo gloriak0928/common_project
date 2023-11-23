@@ -20,9 +20,17 @@
                 <li class="current"><a href="recipes.html">Recipes</a></li>
             </ul>
         </nav>
-    
+        <button id="openLinkButton">Open Today's New York Times</button>
+        
+        <script>
+            // JavaScript to handle button click
+            document.getElementById('openLinkButton').addEventListener('click', function() {
+                window.open("https://www.nytimes.com/section/todayspaper", "_blank");
+            });
+        </script>
+
         <div class="item-profile">
-            <img src="images/Recipes/images/dutchbaby.JPG" alt="dutchbaby">
+            <img src="images/Recipes/images/dutchbaby.JPG" alt="dutchbaby" class="clickable-image">
             <div class="content">
                 <h2>Dutchbaby</h2>
                 <p>
@@ -47,7 +55,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Recipes/images/fettuccine.jpg" alt="fettuccine">
+            <img src="images/Recipes/images/fettuccine.jpg" alt="fettuccine" class="clickable-image">
             <div class="content">
                 <h2>fettuccine</h2>
                 <p>
@@ -72,7 +80,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Recipes/images/shrimp_cooking.jpg" alt="shrimp cooking">
+            <img src="images/Recipes/images/shrimp_cooking.jpg" alt="shrimp cooking" class="clickable-image">
             <div class="content">
                 <h2>shrimp cooking</h2>
                 <p>
@@ -97,7 +105,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Recipes/images/taco_bell_beef.png" alt="Taco_Bell_Beef">
+            <img src="images/Recipes/images/taco_bell_beef.png" alt="Taco_Bell_Beef" class="clickable-image">
             <div class="content">
                 <h2>Taco bell with beef</h2>
                 <p>
@@ -122,7 +130,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Recipes/images/tikkamasala_5.JPG" alt="tikkamasala_5">
+            <img src="images/Recipes/images/tikkamasala_5.JPG" alt="tikkamasala_5" class="clickable-image">
             <div class="content">
                 <h2>Tikka Masala</h2>
                 <p>
@@ -145,6 +153,18 @@
                 <img src="images/Recipes/images/tikka4.jpeg" alt="Tikka4">
             </div>
         </div>
+        <script>
+            function openExternalSite() {
+                window.open("https://github.com/RamseyMeow2/first_site.git", "_blank");
+            }
+    
+            // Add an event listener to each image with the 'clickable-image' class
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.clickable-image').forEach(function(img) {
+                    img.addEventListener('click', openExternalSite);
+                });
+            });
+        </script>
     </main>
 </body>
 </html>

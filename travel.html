@@ -22,8 +22,17 @@
             </ul>
         </nav>
 
+        <button id="openLinkButton">Open Today's New York Times</button>
+        
+        <script>
+            // JavaScript to handle button click
+            document.getElementById('openLinkButton').addEventListener('click', function() {
+                window.open("https://www.nytimes.com/section/todayspaper", "_blank");
+            });
+        </script>
+        
         <div class="item-profile">
-            <img src="images/Travel/images/allantico_vinao.jpg" alt="allantico_vinao">
+            <img src="images/Travel/images/allantico_vinao.jpg" alt="allantico_vinao" class="clickable-image">
             <div class="content">
                 <h2>All'Antico Vinaio, Florence</h2>
                 <p>All'Antico Vinaio in Florence is a renowned sandwich shop, celebrated for its fresh, artisanal ingredients and local charm. Unforgettable flavors; best sandwich I've ever had in a cozy atmosphere.</p>
@@ -43,7 +52,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Travel/images/apostle_islands_gif.gif" alt="apostle_islands" class="gif">
+            <img src="images/Travel/images/apostle_islands_gif.gif" alt="apostle_islands" class="gif" class="clickable-image">
             <div class="content">
                 <h2>Apostle Islands, Wisconsin</h2>
                 <p>Apostle Islands in Wisconsin offer pristine beaches, towering sea caves, and a nautical paradise for kayaking and boating. Kayaking through sea caves was an awe-inspiring, unforgettable adventure.</p>
@@ -62,7 +71,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Travel/images/Barcelona_Beach.jpg" alt="Barcelona_Beach">
+            <img src="images/Travel/images/Barcelona_Beach.jpg" alt="Barcelona_Beach" class="clickable-image">
             <div class="content">
                 <h2>Barcelona Beach, Spain</h2>
                 <p>Barcelona Beach is a lively destination, combining golden sands, azure waters, and a vibrant culture, perfect for sunseekers. Sunsets and sangria; the perfect beach day in a vibrant city.</p>
@@ -81,7 +90,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Travel/images/canyonlands.gif" alt="Canyonlands_park" class="gif">
+            <img src="images/Travel/images/canyonlands.gif" alt="Canyonlands_park" class="gif" class="clickable-image">
             <div class="content">
                 <h2>Canyonlands National Park, Utah</h2>
                 <p>Canyonlands National Park in Utah is a rugged, red-rock wonderland, featuring dramatic vistas, arches, and deep river canyons. Hiking to Mesa Arch was an exhilarating, once-in-a-lifetime experience.</p>
@@ -100,7 +109,7 @@
         </div>
         
         <div class="item-profile">
-            <img src="images/Travel/images/dubai_garden.jpg" alt="dubai_garden" width="400">
+            <img src="images/Travel/images/dubai_garden.jpg" alt="dubai_garden" width="400" class="clickable-image">
             <div class="content">
                 <h2>Dubai Miracle Garden</h2>
                 <p>Dubai Miracle Garden is a floral fantasyland, boasting over 50 million flowers in intricate designs and awe-inspiring structures. Walking amidst flower sculptures felt like stepping into a fairy tale.</p>
@@ -118,8 +127,18 @@
             </div>
         </div>
 
-        
-
+        <script>
+            function openExternalSite() {
+                window.open("https://github.com/RamseyMeow2/first_site.git", "_blank");
+            }
+    
+            // Add an event listener to each image with the 'clickable-image' class
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.clickable-image').forEach(function(img) {
+                    img.addEventListener('click', openExternalSite);
+                });
+            });
+        </script>
     </main>
 </body>
 </html>

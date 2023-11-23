@@ -23,9 +23,17 @@
             </ul>
         </nav>
         
+        <button id="openLinkButton">Open Today's New York Times</button>
+        
+        <script>
+            // JavaScript to handle button click
+            document.getElementById('openLinkButton').addEventListener('click', function() {
+                window.open("https://www.nytimes.com/section/todayspaper", "_blank");
+            });
+        </script>
 
         <div class="item-profile">
-            <img src="images/Pets/images/ador_headrub.jpeg" alt="ador_headrub">
+            <img src="images/Pets/images/ador_headrub.jpeg" alt="ador_headrub" class="clickable-image">
             <div class="content">
                 <h2>Ador</h2>
                 <p>Ador is a charming feline with luxurious tabby fur, captivating green eyes, and a playful spirit that melts hearts instantly.</p>
@@ -47,7 +55,7 @@
 
 
         <div class="item-profile">
-            <img src="images/Pets/images/york.jpg" alt="york_holding_a_tennisball">
+            <img src="images/Pets/images/york.jpg" alt="york_holding_a_tennisball"class="clickable-image">
             <div class="content">
                 <h2>York</h2>
                 <p>York, a black-furred 5-years-old boy, watches curiously as the cat gracefully prances around, its silky fur shimmering in the sunlight.</p>
@@ -62,12 +70,12 @@
                 <img src="images/Pets/images/york1.jpeg" alt="york1">
                 <img src="images/Pets/images/york2.jpeg" alt="york2">
                 <img src="images/Pets/images/york3.jpeg" alt="york3">
-                <!-- <img src="images/Pets/images/york4.jpeg" alt="york4"> -->
+                <img src="images/Pets/images/york4.jpeg" alt="york4">
             </div>
         </div>
 
         <div class="item-profile">
-            <img src="images/Pets/images/bear_squish.JPG" alt="bear_squish">
+            <img src="images/Pets/images/bear_squish.JPG" alt="bear_squish"class="clickable-image">
             <div class="content">
                 <h2>Bear</h2>
                 <p>Bear is a spirited Shiba Inu with a fox-like appearance, exuding charm and mischief while radiating warmth to everyone around him.</p>
@@ -87,7 +95,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Pets/images/carter.jpeg" alt="carter_smilling">
+            <img src="images/Pets/images/carter.jpeg" alt="carter_smilling"class="clickable-image">
             <div class="content">
                 <h2>Carter</h2>
                 <p>Carter is a striking Husky with piercing blue eyes, exuding playful energy and unparalleled loyalty, a true heart-stealer in fur.</p>
@@ -107,7 +115,7 @@
         </div>
 
         <div class="item-profile">
-            <img src="images/Pets/images/chonks_happy.JPG" alt="chonks_happy">
+            <img src="images/Pets/images/chonks_happy.JPG" alt="chonks_happy" class="clickable-image">
             <div class="content">
                 <h2>Chonk</h2>
                 <p>Chonk is a lovable Ragdoll cat with mesmerizing blue eyes, a silky coat, and a penchant for cuddles and playtime.</p>
@@ -122,9 +130,23 @@
                 <img src="images/Pets/images/chonk1.jpeg" alt="chonk1">
                 <img src="images/Pets/images/chonk2.jpeg" alt="chonk2">
                 <img src="images/Pets/images/chonk3.jpeg" alt="chonk3">
-                <img src="images/Pets/images/chonk4.jpeg" alt="chonk4">
+                <img src="images/Pets/images/chonk-animated.gif" alt="chonk-animated" class="chonk-animated">
+                <img src="images/Pets/images/chonk-static.jpeg" alt="chonk-static" class="chonk-static">
             </div>
         </div>
+
+        <script>
+            function openExternalSite() {
+                window.open("https://github.com/RamseyMeow2/first_site.git", "_blank");
+            }
+    
+            // Add an event listener to each image with the 'clickable-image' class
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.clickable-image').forEach(function(img) {
+                    img.addEventListener('click', openExternalSite);
+                });
+            });
+        </script>
     </main>
 </body>
 </html>
